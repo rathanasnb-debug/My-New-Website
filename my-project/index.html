@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>My tailwind</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="#" class="text-xl font-bold">
+          My Website
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-300 hover:text-white transition">
+            Home
+          </a>
+
+          <a href="#about" class="text-gray-300 hover:text-white transition">
+            About
+          </a>
+
+          <a href="#services" class="text-gray-300 hover:text-white transition">
+            Services
+          </a>
+
+          <a href="#contact" class="text-gray-300 hover:text-white transition">
+            Contact
+          </a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+
+        <a href="#home" class="block py-2 text-gray-300 hover:text-white">
+          Home
+        </a>
+
+        <a href="#about" class="block py-2 text-gray-300 hover:text-white">
+          About
+        </a>
+
+        <a href="#services" class="block py-2 text-gray-300 hover:text-white">
+          Services
+        </a>
+
+        <a href="#contact" class="block py-2 text-gray-300 hover:text-white">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section id="home" class="bg-gray-100 text-center py-20">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Welcome to My Website
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-600 mb-8">
+        A simple responsive website using Tailwind CSS.
+      </p>
+
+      <a href="#about"
+        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">
+        Get Started
+      </a>
+
+    </div>
+
+  </section>
+
+
+<!-- ABOUT SECTION -->
+  <section id="about" class="py-20">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+        <!-- Image -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2"
+            class="w-full h-auto rounded-xl shadow-lg" alt="About us" />
+        </div>
+
+        <!-- Content -->
+        <div>
+
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            About Us
+          </h2>
+
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            We create simple and useful websites
+            using modern web technologies.
+          </p>
+
+          <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">
+            Learn More
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+<!-- SERVICES SECTION -->
+  <section id="services" class="bg-gray-100 py-20">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+        Our Services
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 text-center">
+
+          <h5 class="text-xl font-bold text-gray-900 mb-4">
+            Web Design
+          </h5>
+
+          <p class="text-gray-600 mb-6">
+            We design simple and modern websites.
+          </p>
+
+          <a href="#"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+            Learn More
+          </a>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 text-center">
+
+          <h5 class="text-xl font-bold text-gray-900 mb-4">
+            Web Development
+          </h5>
+
+          <p class="text-gray-600 mb-6">
+            We build responsive websites and applications.
+          </p>
+
+          <a href="#"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+            Learn More
+          </a>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 text-center">
+
+          <h5 class="text-xl font-bold text-gray-900 mb-4">
+            Support
+          </h5>
+
+          <p class="text-gray-600 mb-6">
+            We provide support and maintenance.
+          </p>
+
+          <a href="#"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+            Learn More
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+        Contact Us
+      </h2>
+
+      <div class="max-w-2xl mx-auto">
+
+        <form class="space-y-6">
+
+          <!-- Name -->
+          <div>
+
+            <label class="block text-sm font-semibold text-gray-700 mb-2">
+              Name
+            </label>
+
+            <input type="text" placeholder="Enter your name" class="w-full border border-gray-300 rounded-lg px-4 py-3
+                     focus:outline-none focus:ring-2 focus:ring-blue-500
+                     focus:border-blue-500" />
+
+          </div>
+
+
+          <!-- Email -->
+          <div>
+
+            <label class="block text-sm font-semibold text-gray-700 mb-2">
+              Email
+            </label>
+
+            <input type="email" placeholder="Enter your email" class="w-full border border-gray-300 rounded-lg px-4 py-3
+                     focus:outline-none focus:ring-2 focus:ring-blue-500
+                     focus:border-blue-500" />
+
+          </div>
+
+
+          <!-- Message -->
+          <div>
+
+            <label class="block text-sm font-semibold text-gray-700 mb-2">
+              Message
+            </label>
+
+            <textarea rows="4" placeholder="Enter your message" class="w-full border border-gray-300 rounded-lg px-4 py-3
+                     focus:outline-none focus:ring-2 focus:ring-blue-500
+                     focus:border-blue-500"></textarea>
+
+          </div>
+
+
+          <!-- Submit -->
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white
+                   font-semibold px-6 py-3 rounded-lg transition">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- FOOTER -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+
+    <p class="mb-0">
+      &copy; 2026 My Website. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- <JAVASCRIPT > -->
+  <script>
+
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Close mobile menu after clicking a link
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
